@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,10 +37,12 @@ public class MainActivity extends AppCompatActivity {
      edith.speak("I am doing an awesome job");
 
 
-     Anna edgar = new Anna("edgar",2,15);
+     Anna edgar = new Anna("edgar",2,15,5);
      edgar.eat();
+     Log.d("Human","Anna weight is"+edgar.getWeight());
      edgar.eat(30);
-     edgar.birthday(7);
+     edgar.birthday();
+     Log.d("Human","Anna weight is "+ edgar.getAge());
 
     }
 

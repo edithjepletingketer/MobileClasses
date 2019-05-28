@@ -45,14 +45,17 @@ private int weight;
     }
     public void sleep(int hours){
         hours=hours;
-        Log.d("Human","I am sleeping for three hours");
+        Log.d("Human","I am sleeping for "+ hours + "hours");
     }
     public String speak(String speech){
+        Log.d("Human",speech);
         return speech;
-
     }
+
     public void birthday(){
+        int age = getAge();
         age = age+1;
+        setAge(age);
     }
     public int eat(int weight){
         weight = weight + 2;
